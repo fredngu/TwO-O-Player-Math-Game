@@ -1,0 +1,12 @@
+Task 1: Extract Nouns for Classes
+- player
+- game
+- turn
+- score
+
+Task 2: Write their roles
+- player contains the players score and answers
+  - methods include answering questions
+  - 
+- game contains the turns and final scores
+
