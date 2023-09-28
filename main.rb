@@ -7,4 +7,4 @@ require 'pp'
 require './game'
 
 mathGame = Game.new
-game.start
+mathGame.start

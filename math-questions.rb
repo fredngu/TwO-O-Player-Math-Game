@@ -6,12 +6,11 @@ class Question
     @answer = @num1 + @num2
   end
 
-  def math_question
-    puts "what does #{num1} plus #{num2} equal?"
+  def math_question(name)
+    puts "#{name}: What does #{num1} plus #{num2} equal?"
   end
 
   def answer_check
-    player_answer = gets.chomp
     if @answer == player_answer.to_i
       puts "nice"
     else
@@ -21,8 +20,8 @@ class Question
 
 end
 
-questions = Question.new()
-puts questions.num1
-puts questions.num2
-puts questions.math_question
-puts questions.answer_check
+# questions = Question.new()
+# puts questions.num1
+# puts questions.num2
+# puts questions.math_question
+# puts questions.answer_check
