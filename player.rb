@@ -3,7 +3,6 @@ class Player
   def initialize(value)
     @name = value
     @lives = 3
-    @turn = false
   end
 
   def lose_life
@@ -15,11 +14,11 @@ class Player
     questions.math_question(@name)
     print ">"
     @player_answer = gets.chomp
+    if questions.answer_check?(@player_answer)
+      puts 'YES! You are correct.'
+    else
+      puts 'Seriously? No!'
+      lose_life
+    end
   end
 end
-
-# p1 = Player.new("Bob")
-# puts "Name of player: #{p1.name}"
-# puts "Lives of player: #{p1.lives}"
-# p1.lose_life
-# puts "Lives of player: #{p1.lives}"

@@ -10,14 +10,13 @@ class Question
     puts "#{name}: What does #{num1} plus #{num2} equal?"
   end
 
-  def answer_check
+  def answer_check?(player_answer)
     if @answer == player_answer.to_i
-      puts "nice"
+      true
     else
-      puts "sad"
+      false
     end
   end
-
 end
 
 # questions = Question.new()

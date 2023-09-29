@@ -5,6 +5,8 @@
 # require './filters'
 require 'pp'
 require './game'
+require './math-questions'
+require './player'
 
 mathGame = Game.new
 mathGame.start
